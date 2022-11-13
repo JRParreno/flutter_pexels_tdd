@@ -17,9 +17,7 @@ void main() {
 
   setUp(() {
     mockPexelsPhotoRepository = MockMockPexelsPhotoRepository();
-    usecase = GetPexelsPhoto(
-      repository: mockPexelsPhotoRepository,
-    );
+    usecase = GetPexelsPhoto(mockPexelsPhotoRepository);
   });
 
   // START INITIALIZATION
@@ -73,7 +71,7 @@ void main() {
     when(mockPexelsPhotoRepository.getPexelsPhoto(id: anyNamed("id")))
         .thenAnswer((_) async => Right(tGetPexelsPhoto));
     // act
-    final result = await usecase.execute(id: tId);
+    final result = await usecase(const Params(id: tId));
     // assert
     expect(result, Right(tGetPexelsPhoto));
     verify(mockPexelsPhotoRepository.getPexelsPhoto(id: tId));
