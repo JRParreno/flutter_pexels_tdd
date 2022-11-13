@@ -16,12 +16,22 @@ know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+1. Flutter Test Driven Development
+2. Clean Architecture
+3. Code Coverage
 
-## Getting started
+## Code Coverage
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+# Run `sh coverage.sh` file to generate code coverage or manually method second option
+# Generate `coverage/lcov.info` file
+flutter test --coverage
+# Generate HTML report
+# Note: on macOS you need to have lcov installed on your system (`brew install lcov`) to use this:
+genhtml coverage/lcov.info -o coverage/html
+# Open the report
+open coverage/html/index.html
+
+reference: Link(https://codewithandrea.com/articles/flutter-test-coverage/)
 
 ## Usage
 

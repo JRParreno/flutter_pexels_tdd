@@ -66,7 +66,7 @@ void main() {
   );
   // END INITIALIZATION
 
-  test('shoud get photo from pexels api', () async {
+  test('should get photo from pexels api', () async {
     // arrange
     when(mockPexelsPhotoRepository.getPexelsPhoto(any))
         .thenAnswer((_) async => Right(tGetPexelsPhoto));

@@ -195,7 +195,7 @@ void main() {
     when(mockPexelsVideoRepository.getPexelsVideo(any))
         .thenAnswer((_) async => const Right(tGetPexelsVideo));
     // act
-    final result = await usecase.execute(tId);
+    final result = await usecase(const Params(tId));
     // assert
     expect(result, const Right(tGetPexelsVideo));
     verify(mockPexelsVideoRepository.getPexelsVideo(tId));
