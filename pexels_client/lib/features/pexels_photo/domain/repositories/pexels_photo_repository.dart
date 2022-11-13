@@ -4,5 +4,5 @@ import '../entities/pexels_photo.dart';
 
 // practice to use named arguments
 abstract class PexelsPhotoRepository {
-  Future<Either<Failure, PexelsPhoto>> getPexelsPhoto({required String id});
+  Future<Either<Failure, PexelsPhoto>> getPexelsPhoto(String id);
 }

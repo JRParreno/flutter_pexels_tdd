@@ -13,7 +13,7 @@ class GetPexelsPhoto implements UseCase<PexelsPhoto, Params> {
   // Dart Callable classes
   @override
   Future<Either<Failure, PexelsPhoto>> call(Params params) async {
-    return await repository.getPexelsPhoto(id: params.id);
+    return await repository.getPexelsPhoto(params.id);
   }
 }
 

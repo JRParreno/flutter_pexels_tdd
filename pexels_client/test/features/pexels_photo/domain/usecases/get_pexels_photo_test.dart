@@ -68,13 +68,13 @@ void main() {
 
   test('shoud get photo from pexels api', () async {
     // arrange
-    when(mockPexelsPhotoRepository.getPexelsPhoto(id: anyNamed("id")))
+    when(mockPexelsPhotoRepository.getPexelsPhoto(any))
         .thenAnswer((_) async => Right(tGetPexelsPhoto));
     // act
     final result = await usecase(const Params(id: tId));
     // assert
     expect(result, Right(tGetPexelsPhoto));
-    verify(mockPexelsPhotoRepository.getPexelsPhoto(id: tId));
+    verify(mockPexelsPhotoRepository.getPexelsPhoto(tId));
     verifyNoMoreInteractions(mockPexelsPhotoRepository);
   });
 }
