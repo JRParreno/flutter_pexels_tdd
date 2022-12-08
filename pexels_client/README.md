@@ -11,8 +11,7 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Pexels Client For Flutter
 
 ## Features
 
@@ -22,28 +21,21 @@ know whether this package might be useful for them.
 
 ## Code Coverage
 
-# Run `sh coverage.sh` file to generate code coverage or manually method second option
-# Generate `coverage/lcov.info` file
-flutter test --coverage
-# Generate HTML report
-# Note: on macOS you need to have lcov installed on your system (`brew install lcov`) to use this:
-genhtml coverage/lcov.info -o coverage/html
-# Open the report
-open coverage/html/index.html
+## Option 1
+Run `sh coverage.sh` file to generate code coverage or manually method second option
 
-reference: Link(https://codewithandrea.com/articles/flutter-test-coverage/)
+## Option 2
+
+1. Generate `coverage/lcov.info` file
+  flutter test --coverage
+2. Generate HTML report
+  Note: on macOS you need to have lcov installed on your system (`brew install lcov`) to use this:
+    genhtml coverage/lcov.info -o coverage/html
+3. Open the report
+  open coverage/html/index.html
+
+reference: [Link](https://codewithandrea.com/articles/flutter-test-coverage/)
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
-
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Just import to your flutter app and good to go!
